@@ -38,7 +38,7 @@ export default function Home() {
         ActionReducer(dispatch);
         setLoading(false);
       }}>Get Products</button>    
-      { loading && <p>Loading...</p>}
+      {loading && <p>Loading...</p>}
       {state.error && <p>Error: {state.error}</p>}
       <ul className="product-list">
         {state.products.map((product) => {

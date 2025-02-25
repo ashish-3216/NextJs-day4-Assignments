@@ -8,7 +8,6 @@
 --loader is implemented using the useContext hook.<br>
 --the loader is implemented in the /Context/LoaderContext.js file.<br>
 **Ques3. Implement Redux to fetch api 'https://dummyjson.com/quotes'.**<br>
---implemented in pages/comments.js<br>
---Redux is implemented using the useReducer hook.<br>
---the Redux is implemented in the /Reducer/commentReducer.js file.<br>
+--implemented in pages/quotes.js<br>    
+--the Redux is implemented in the /redux/quoteSlice.js file.<br>
 --the Redux is used to fetch the api 'https://dummyjson.com/quotes'.<br>
