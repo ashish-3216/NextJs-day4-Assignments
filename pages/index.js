@@ -3,6 +3,7 @@ import productReducer from "../Reducer/productReducer";
 import ActionReducer from "../Action/ActionReducer";
 import "../styles/globals.css";
 import { LoaderContext } from "@/Context/LoaderContext";
+import { useRouter } from "next/navigation";
 const initialState = {
   products: [],
   loading: false,
@@ -15,6 +16,7 @@ export default function Home() {
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
   const { loading, setLoading } = useContext(LoaderContext);
+  const router = useRouter();
   const addProduct = () => {
     const newProduct = {
       id: state.products.length + 1,
@@ -93,6 +95,9 @@ export default function Home() {
           Add Product
         </button>
       </div>
+      <button className="question-3-button" onClick={() => router.push("/quotes")}>
+        Question 3 : got to Quotes
+      </button>
     </div>
   );
 }
