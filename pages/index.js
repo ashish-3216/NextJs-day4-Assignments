@@ -1,7 +1,6 @@
 import React, { useReducer, useState, useContext } from "react";
 import productReducer from "../Reducer/productReducer";
 import ActionReducer from "../Action/ActionReducer";
-import "../styles/globals.css";
 import { LoaderContext } from "@/Context/LoaderContext";
 import { useRouter } from "next/navigation";
 const initialState = {
