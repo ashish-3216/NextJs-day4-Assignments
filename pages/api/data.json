@@ -1,0 +1,52 @@
+[
+    {
+      "name": "Wireless Bluetooth Headphones",
+      "description": "High-quality over-ear headphones with noise cancellation and deep bass.",
+      "category": "Electronics"
+    },
+    {
+      "name": "Gaming Laptop",
+      "description": "Powerful gaming laptop with RTX 4060 GPU and 16GB RAM for smooth performance.",
+      "category": "Computers"
+    },
+    {
+      "name": "Smartphone Pro Max",
+      "description": "Latest smartphone with OLED display, 5G connectivity, and a triple-lens camera.",
+      "category": "Mobile Phones"
+    },
+    {
+      "name": "Stainless Steel Water Bottle",
+      "description": "Durable, leak-proof, insulated water bottle keeps drinks hot or cold for hours.",
+      "category": "Home & Kitchen"
+    },
+    {
+      "name": "Running Shoes",
+      "description": "Lightweight and comfortable running shoes with high grip and breathable design.",
+      "category": "Footwear"
+    },
+    {
+      "name": "Leather Office Chair",
+      "description": "Ergonomic office chair with lumbar support and adjustable height for comfort.",
+      "category": "Furniture"
+    },
+    {
+      "name": "Digital SLR Camera",
+      "description": "Professional DSLR camera with 24MP sensor and 4K video recording capabilities.",
+      "category": "Cameras"
+    },
+    {
+      "name": "Wireless Mechanical Keyboard",
+      "description": "RGB backlit mechanical keyboard with hot-swappable keys and long battery life.",
+      "category": "Accessories"
+    },
+    {
+      "name": "Smart Watch Series X",
+      "description": "Advanced smartwatch with heart rate monitoring, GPS, and waterproof design.",
+      "category": "Wearables"
+    },
+    {
+      "name": "Portable Air Purifier",
+      "description": "Compact air purifier with HEPA filter for clean and fresh indoor air.",
+      "category": "Home Appliances"
+    }
+  ]
