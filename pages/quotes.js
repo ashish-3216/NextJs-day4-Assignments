@@ -12,7 +12,7 @@ export default function Quotes() {
       try {
         const response = await fetch("https://dummyjson.com/quotes");
         const data = await response.json();
-        dispatch(setQuotes(data.quotes)); // Fix: Use `data.quotes`
+        dispatch(setQuotes(data.quotes));
       } catch (error) {
         console.log(error);
       }
