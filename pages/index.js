@@ -1,7 +1,7 @@
 import React, { useReducer, useState, useContext } from "react";
 import productReducer from "../Reducer/productReducer";
-import ActionReducer from "../Action/ActionReducer";
-import { LoaderContext } from "@/Context/LoaderContext";
+import FetchProducts from "../Action/FetchProducts";
+import { LoaderContext, useLoader } from '../Context/LoaderContext'
 import { useRouter } from "next/navigation";
 const initialState = {
   products: [],
@@ -10,11 +10,11 @@ const initialState = {
 };
 
 export default function Home() {
+  const {loading, setLoading} = useLoader()
   const [state, dispatch] = useReducer(productReducer, initialState);
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
-  const { loading, setLoading } = useContext(LoaderContext);
   const router = useRouter();
   const addProduct = () => {
     const newProduct = {
@@ -36,8 +36,7 @@ export default function Home() {
       <br />
       <button className="get-products-button" onClick={() => {
         setLoading(true);
-        ActionReducer(dispatch);
-        setLoading(false);
+        FetchProducts(dispatch, {setLoading});
       }}>Get Products</button>    
       {loading && <p>Loading...</p>}
       {state.error && <p>Error: {state.error}</p>}
